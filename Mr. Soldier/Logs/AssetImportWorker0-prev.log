@@ -1,0 +1,790 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.746; Version 2004; 64bit' Language: 'en' Physical Memory: 16234 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49233
+Successfully changed project path to: D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier
+D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 24.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path D:/Unity/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   
+    VRAM:     4018 MB
+    Driver:   27.21.14.5167
+Initialize mono
+Mono path[0] = 'D:/Unity/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001339 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 21.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.548 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000530 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.816 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.6 MB.
+System memory in use after: 56.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1540.
+Total: 1.806100 ms (FindLiveObjects: 0.210600 ms CreateObjectMapping: 0.053300 ms MarkObjects: 1.458800 ms  DeleteObjects: 0.081800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Imports/elite/preview_front.jpg
+  artifactKey: Guid(3bbbabf06a8881847ba67135dbd0bd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/preview_front.jpg using Guid(3bbbabf06a8881847ba67135dbd0bd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e455aa85198ebdfc5f58f44539db25') in 0.104949 seconds
+  Import took 0.108380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Imports/elite/steel.png
+  artifactKey: Guid(d82dbf8fd01b26841890d2e5b07fee4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/steel.png using Guid(d82dbf8fd01b26841890d2e5b07fee4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91550fba040d8320748f02710c3cf180') in 0.069891 seconds
+  Import took 0.072351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Imports/elite/leather.png
+  artifactKey: Guid(eafd622616a07a14c83048411cef6e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/leather.png using Guid(eafd622616a07a14c83048411cef6e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e900492ec85a3e7b9e149eba34e9ad3') in 0.030218 seconds
+  Import took 0.033251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Imports/elite
+  artifactKey: Guid(bcc215663441c1f4aa7e1174e5f52db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite using Guid(bcc215663441c1f4aa7e1174e5f52db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ad0a07552429fcd1116082c1e035fe') in 0.009500 seconds
+  Import took 0.012673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Imports/elite/carbon.png
+  artifactKey: Guid(eb94259fcb67d0e4d931c70bb92722d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/carbon.png using Guid(eb94259fcb67d0e4d931c70bb92722d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915df654105a103f5de8abcbdb7e8fe3') in 0.020973 seconds
+  Import took 0.023176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Imports/elite/eye.png
+  artifactKey: Guid(c8b32d78353b0ca439628a1bdb7d746e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/eye.png using Guid(c8b32d78353b0ca439628a1bdb7d746e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1653ee02a4d1fc7f4f8fefd6c34391d') in 0.032846 seconds
+  Import took 0.035131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Imports/elite/preview_left.jpg
+  artifactKey: Guid(a7fd01fe6ba65b74a809b228a50d9dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/preview_left.jpg using Guid(a7fd01fe6ba65b74a809b228a50d9dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c39b1b0b7f0a03bdaa75ebdf90decd0') in 0.023039 seconds
+  Import took 0.025746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000466 seconds.
+  path: Assets/Imports/elite/preview_back.jpg
+  artifactKey: Guid(32919963893c15244be18e85a051d89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/preview_back.jpg using Guid(32919963893c15244be18e85a051d89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bbf03e618ace3aa9d28a6f87c2e047b') in 0.040935 seconds
+  Import took 0.044663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Imports/elite/camo.png
+  artifactKey: Guid(5ae2bf78cad16464d934d4b930a7f2fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/camo.png using Guid(5ae2bf78cad16464d934d4b930a7f2fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb55c524cb626c88ad8792093038de9') in 0.027216 seconds
+  Import took 0.029689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Imports
+  artifactKey: Guid(461a9cf2ff0ddd24da6738d3e710b126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports using Guid(461a9cf2ff0ddd24da6738d3e710b126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a156ec10cccc0215a00c7475191790a') in 0.012831 seconds
+  Import took 0.016021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Imports/elite/skin.png
+  artifactKey: Guid(b3d13328625963f478a539c34eb25b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/skin.png using Guid(b3d13328625963f478a539c34eb25b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fb228225491304a9d7b636c9fe540f') in 0.025856 seconds
+  Import took 0.028799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Imports/elite/elite.obj
+  artifactKey: Guid(21649738a057db5459c228f805f25720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/elite.obj using Guid(21649738a057db5459c228f805f25720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3292d2f882955b7208e625263a7d3f9') in 0.753470 seconds
+  Import took 0.755746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003809 seconds.
+  path: Assets/Imports/elite/elite.obj
+  artifactKey: Guid(21649738a057db5459c228f805f25720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/elite.obj using Guid(21649738a057db5459c228f805f25720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3292d2f882955b7208e625263a7d3f9') in 0.252379 seconds
+  Import took 0.255536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1499.284404 seconds.
+  path: Assets/Imports/elite/elite.obj
+  artifactKey: Guid(21649738a057db5459c228f805f25720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/elite.obj using Guid(21649738a057db5459c228f805f25720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06bf6c21a7b765174dc232ed224ff7d3') in 0.086462 seconds
+  Import took 0.092481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2415.241994 seconds.
+  path: Assets/Animations/Soldier
+  artifactKey: Guid(2ff3d8d7c2ae2454d8130944cd7b6a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier using Guid(2ff3d8d7c2ae2454d8130944cd7b6a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5678794a7f70a70f832c86c7aacf1036') in 0.008267 seconds
+  Import took 0.010456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036844 seconds.
+  path: Assets/Animations/Soldier/Breathing Idle.fbx
+  artifactKey: Guid(31df707883a8dc342949e03131d2e06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Breathing Idle.fbx using Guid(31df707883a8dc342949e03131d2e06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7727fafdf45e75e95d6c4b72e8c17099') in 0.256590 seconds
+  Import took 0.258922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Animations/Soldier/Running.fbx
+  artifactKey: Guid(af1ddc1614176424cb3942c584217539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Running.fbx using Guid(af1ddc1614176424cb3942c584217539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c592db98f0a581f50a74f33478d0f1ec') in 0.187909 seconds
+  Import took 0.190071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Animations/Soldier/Picking Up.fbx
+  artifactKey: Guid(8576f9b1ac90a4c4ca7e311d96f97204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Picking Up.fbx using Guid(8576f9b1ac90a4c4ca7e311d96f97204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97fa89e59abc225800062a0273c23bed') in 0.157603 seconds
+  Import took 0.159716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Animations/Soldier/Crouched Walking.fbx
+  artifactKey: Guid(57027180c80dc4a4eab8b00258f398b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouched Walking.fbx using Guid(57027180c80dc4a4eab8b00258f398b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6639280dd83cb46bc8dbf58d787c49c') in 0.160125 seconds
+  Import took 0.162232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Animations/Soldier/Walking.fbx
+  artifactKey: Guid(e07c2e6fa8263e0459959bc220ab069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Walking.fbx using Guid(e07c2e6fa8263e0459959bc220ab069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247283935bf970e7ec500a393bdee904') in 0.217695 seconds
+  Import took 0.219779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Animations/Soldier/Crouching Idle.fbx
+  artifactKey: Guid(268cf3c93b9511247b1ec28397b2ea94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouching Idle.fbx using Guid(268cf3c93b9511247b1ec28397b2ea94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7f841c5fd3f8f6ecc872cd8e1eccdb2') in 0.175387 seconds
+  Import took 0.177441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Animations/Soldier/Crouch Death.fbx
+  artifactKey: Guid(fe9601e01bbca114b961e0188b52ecd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouch Death.fbx using Guid(fe9601e01bbca114b961e0188b52ecd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43feabd2f513070933edccf931ded70a') in 0.156558 seconds
+  Import took 0.158674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Animations/Soldier/Grenade Throw Crouch.fbx
+  artifactKey: Guid(4e33d429a227d6147a654b60e1900053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Grenade Throw Crouch.fbx using Guid(4e33d429a227d6147a654b60e1900053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2e711dd073b681845127cc7bb9963b') in 0.162381 seconds
+  Import took 0.164544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Animations/Soldier/Standing To Crouched.fbx
+  artifactKey: Guid(561f4630154c0874c80875bdee8e95a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Standing To Crouched.fbx using Guid(561f4630154c0874c80875bdee8e95a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61751379d0c036d75a9ac273344f5ff3') in 0.161050 seconds
+  Import took 0.163221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Animations/Soldier/Grenade Throw Standing.fbx
+  artifactKey: Guid(0fe015b42ca48f649ab9dcf5c0df19a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Grenade Throw Standing.fbx using Guid(0fe015b42ca48f649ab9dcf5c0df19a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380458fe078da556483eb8f74ff904a2') in 0.160189 seconds
+  Import took 0.162308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Animations/Soldier/Crouch To Stand.fbx
+  artifactKey: Guid(28bb6a34c9fcdce4db04ec7007ac0352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouch To Stand.fbx using Guid(28bb6a34c9fcdce4db04ec7007ac0352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20eff755c2b594056655a0509020064f') in 0.167518 seconds
+  Import took 0.169641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Animations/Soldier/Death Standing.fbx
+  artifactKey: Guid(0941bc096d3f5fe49808a5d6117f5e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Death Standing.fbx using Guid(0941bc096d3f5fe49808a5d6117f5e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1611a44295d73f96f577af7ab4c832') in 0.179700 seconds
+  Import took 0.181990 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000506 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.721 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.8 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1590.
+Total: 2.323300 ms (FindLiveObjects: 0.284000 ms CreateObjectMapping: 0.070500 ms MarkObjects: 1.907300 ms  DeleteObjects: 0.059600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 146.482288 seconds.
+  path: Assets/Animations/Soldier/Breathing Idle 1.fbx
+  artifactKey: Guid(2e2d6801f6ec2c048a718d22eb9ade80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Breathing Idle 1.fbx using Guid(2e2d6801f6ec2c048a718d22eb9ade80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ce141f67a87229305afa0c7838c3e6') in 0.235101 seconds
+  Import took 0.237385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 346.573004 seconds.
+  path: Assets/Animations/Soldier/Breathing Idle.fbx
+  artifactKey: Guid(31df707883a8dc342949e03131d2e06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Breathing Idle.fbx using Guid(31df707883a8dc342949e03131d2e06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe09fdf81204be15c7a8add4edec15b') in 0.150643 seconds
+  Import took 0.153805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1529.755154 seconds.
+  path: Assets/Animations/Soldier/Breathing Idle.anim
+  artifactKey: Guid(e83c9ca70f9f3ff48b812e3e69e55f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Breathing Idle.anim using Guid(e83c9ca70f9f3ff48b812e3e69e55f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2bfe189dca84b042a223d0e1d9e8bd') in 0.033598 seconds
+  Import took 0.036486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.296120 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(c62ec8da93e86354599e7adfaf1ba0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(c62ec8da93e86354599e7adfaf1ba0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1178f5a63bd3dd0d43b121fe55ea91d7') in 0.015686 seconds
+  Import took 0.017982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.629262 seconds.
+  path: Assets/Animations/Soldier/Crouch Death.anim
+  artifactKey: Guid(c62ec8da93e86354599e7adfaf1ba0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouch Death.anim using Guid(c62ec8da93e86354599e7adfaf1ba0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f60cea527806b271f58b9bb1ec00c8') in 0.013376 seconds
+  Import took 0.016046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.513026 seconds.
+  path: Assets/Animations/Soldier/elite.controller
+  artifactKey: Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/elite.controller using Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484c904b278a22a19c63e24c03472a5e') in 0.007542 seconds
+  Import took 0.009724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.702470 seconds.
+  path: Assets/Imports/elite/elite.obj
+  artifactKey: Guid(21649738a057db5459c228f805f25720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/elite.obj using Guid(21649738a057db5459c228f805f25720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e02b12a84a55cea30baa285db50450') in 0.065378 seconds
+  Import took 0.067542 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000536 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.674 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.9 MB.
+System memory in use after: 72.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1593.
+Total: 1.504000 ms (FindLiveObjects: 0.130500 ms CreateObjectMapping: 0.031800 ms MarkObjects: 1.290800 ms  DeleteObjects: 0.050100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 267.181108 seconds.
+  path: Assets/Animations/Soldier/elite.controller
+  artifactKey: Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/elite.controller using Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7fd6196016b5596d94bd17e08ccd186') in 0.040547 seconds
+  Import took 0.043055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.260747 seconds.
+  path: Assets/Animations/Soldier/Breathing Idle.anim
+  artifactKey: Guid(e83c9ca70f9f3ff48b812e3e69e55f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Breathing Idle.anim using Guid(e83c9ca70f9f3ff48b812e3e69e55f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21eb12bf9962f41adc10278207bf5ebc') in 0.032298 seconds
+  Import took 0.034238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.994048 seconds.
+  path: Assets/Animations/Soldier/Crouch Death.anim
+  artifactKey: Guid(c62ec8da93e86354599e7adfaf1ba0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouch Death.anim using Guid(c62ec8da93e86354599e7adfaf1ba0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa840f2350d885a872b893be053a8bbe') in 0.010254 seconds
+  Import took 0.012302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 282.610358 seconds.
+  path: Assets/Animations/Soldier/Breathing Idle.fbx
+  artifactKey: Guid(31df707883a8dc342949e03131d2e06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Breathing Idle.fbx using Guid(31df707883a8dc342949e03131d2e06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ca423b4ff74d789c2a4ca6ad5147d1') in 0.477863 seconds
+  Import took 0.481994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.779671 seconds.
+  path: Assets/Animations/Soldier/Soldier.anim
+  artifactKey: Guid(883662e882e076b46bf9ee73f2fe1f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Soldier.anim using Guid(883662e882e076b46bf9ee73f2fe1f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0145c7abe4dc81032e57e89cbf6bf3') in 0.008631 seconds
+  Import took 0.011964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.222738 seconds.
+  path: Assets/Animations/Soldier/elite.controller
+  artifactKey: Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/elite.controller using Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71cf52918392864c5b77cad18647609') in 0.008344 seconds
+  Import took 0.013292 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000847 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.030 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.4 MB.
+System memory in use after: 72.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1596.
+Total: 4.799000 ms (FindLiveObjects: 0.511000 ms CreateObjectMapping: 0.076500 ms MarkObjects: 4.147600 ms  DeleteObjects: 0.061700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000672 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.510 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.5 MB.
+System memory in use after: 72.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1598.
+Total: 5.045300 ms (FindLiveObjects: 1.114100 ms CreateObjectMapping: 0.159900 ms MarkObjects: 3.708600 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 210.642080 seconds.
+  path: Assets/Animations/Soldier/elite.controller
+  artifactKey: Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/elite.controller using Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1fa4d24153dd6ad3dde79d0ca507ebf') in 0.012484 seconds
+  Import took 0.014315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001416 seconds.
+  path: Assets/Animations/Soldier/elite.controller
+  artifactKey: Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/elite.controller using Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1fa4d24153dd6ad3dde79d0ca507ebf') in 0.003368 seconds
+  Import took 0.005182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.060280 seconds.
+  path: Assets/Animations/Soldier/Breathing Idle.anim
+  artifactKey: Guid(e83c9ca70f9f3ff48b812e3e69e55f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Breathing Idle.anim using Guid(e83c9ca70f9f3ff48b812e3e69e55f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ad95ca3586d4beb143714403dda3ed') in 0.003374 seconds
+  Import took 0.005388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.699967 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(05bf49e5a272e1744a299830de40cc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(05bf49e5a272e1744a299830de40cc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fa25004001b0e5b6916b7477bb88c6') in 0.008784 seconds
+  Import took 0.011694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 135.339413 seconds.
+  path: Assets/Imports/elite/Soldier.fbx
+  artifactKey: Guid(1caf17ae1ba40194b94c5744909d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/Soldier.fbx using Guid(1caf17ae1ba40194b94c5744909d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af70b9a9c66b43751be327c892c0f99') in 0.234118 seconds
+  Import took 0.236944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.676815 seconds.
+  path: Assets/Imports/elite/Soldier.fbx
+  artifactKey: Guid(1caf17ae1ba40194b94c5744909d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/Soldier.fbx using Guid(1caf17ae1ba40194b94c5744909d1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407cbc0989708f316523c24854246bf7') in 0.197615 seconds
+  Import took 0.200635 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.7 MB.
+System memory in use after: 72.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1601.
+Total: 1.793600 ms (FindLiveObjects: 0.162800 ms CreateObjectMapping: 0.032100 ms MarkObjects: 1.547900 ms  DeleteObjects: 0.049300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.507475 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(6e0c5829b48ef8a4ead1c67e13ba45d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(6e0c5829b48ef8a4ead1c67e13ba45d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bee9fde6ee7c226f28ca087533c89c3') in 0.023646 seconds
+  Import took 0.025693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.020464 seconds.
+  path: Assets/Animations/Soldier/Crouch Death.anim
+  artifactKey: Guid(6e0c5829b48ef8a4ead1c67e13ba45d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouch Death.anim using Guid(6e0c5829b48ef8a4ead1c67e13ba45d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1b00c7cd4530fad42ad48ac829d97d') in 0.011251 seconds
+  Import took 0.013413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.099741 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(08458709b9d662c409971adf6eb22793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(08458709b9d662c409971adf6eb22793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3d1092944102c2932c28edb04d28b6') in 0.006991 seconds
+  Import took 0.009023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.310294 seconds.
+  path: Assets/Animations/Soldier/Crouch to Stand.anim
+  artifactKey: Guid(08458709b9d662c409971adf6eb22793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouch to Stand.anim using Guid(08458709b9d662c409971adf6eb22793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b20809dc1ab8eefa960163fa8225aa1') in 0.009703 seconds
+  Import took 0.012394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.366421 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(ce67f23483bafa6469629bc2ca0ed37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(ce67f23483bafa6469629bc2ca0ed37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ca217bc7a239de233eef7e5110228a') in 0.007410 seconds
+  Import took 0.009487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.705440 seconds.
+  path: Assets/Animations/Soldier/Crouched Walking.anim
+  artifactKey: Guid(ce67f23483bafa6469629bc2ca0ed37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouched Walking.anim using Guid(ce67f23483bafa6469629bc2ca0ed37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d48b911a486790dfefcb1abf43cf94f') in 0.007339 seconds
+  Import took 0.009324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.483676 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(24f701f08a0ce4246b691b4f3481200b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(24f701f08a0ce4246b691b4f3481200b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b7d03e258c9e2b1532926476635d65') in 0.004629 seconds
+  Import took 0.006849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.719109 seconds.
+  path: Assets/Animations/Soldier/Crouching Idle.anim
+  artifactKey: Guid(24f701f08a0ce4246b691b4f3481200b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Crouching Idle.anim using Guid(24f701f08a0ce4246b691b4f3481200b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f187fc2a4b067e0b4f69d0589c6b089') in 0.005471 seconds
+  Import took 0.009342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.479066 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(37e3353ff9e29464499ddf8669821dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(37e3353ff9e29464499ddf8669821dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c665051429b7742e43348004b8f66eec') in 0.012670 seconds
+  Import took 0.014820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.784510 seconds.
+  path: Assets/Animations/Soldier/Death Standing.anim
+  artifactKey: Guid(37e3353ff9e29464499ddf8669821dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Death Standing.anim using Guid(37e3353ff9e29464499ddf8669821dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579e46c2e1a727f947a2bd09dc90e40d') in 0.014040 seconds
+  Import took 0.016235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.399824 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(d571c456c52f0644eb7cb26a0812e425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(d571c456c52f0644eb7cb26a0812e425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e185d718d69d264d638b149981e2b0ed') in 0.017266 seconds
+  Import took 0.019610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.216210 seconds.
+  path: Assets/Animations/Soldier/Grenade Throw Crouch.anim
+  artifactKey: Guid(d571c456c52f0644eb7cb26a0812e425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Grenade Throw Crouch.anim using Guid(d571c456c52f0644eb7cb26a0812e425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a56333679285812ec018e42595aff10') in 0.023695 seconds
+  Import took 0.025811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.449991 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(283d8ab5520a45046a65a3d29e064c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(283d8ab5520a45046a65a3d29e064c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c9793939fcc873466d62b3013a7020') in 0.010896 seconds
+  Import took 0.013104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.179726 seconds.
+  path: Assets/Animations/Soldier/Grenade Throw Stand.anim
+  artifactKey: Guid(283d8ab5520a45046a65a3d29e064c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Grenade Throw Stand.anim using Guid(283d8ab5520a45046a65a3d29e064c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9353c33d074e587d16c1cc47d06b943a') in 0.017665 seconds
+  Import took 0.019719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.961701 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(b099bdabc839fc646a1b7358fb487726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(b099bdabc839fc646a1b7358fb487726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237062696f06e06c3427d3b62a24b8c8') in 0.011726 seconds
+  Import took 0.013941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.064622 seconds.
+  path: Assets/Animations/Soldier/Pick Up.anim
+  artifactKey: Guid(b099bdabc839fc646a1b7358fb487726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Pick Up.anim using Guid(b099bdabc839fc646a1b7358fb487726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457d5b462244a155b8012134e6597dd0') in 0.017723 seconds
+  Import took 0.019885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.760946 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(061e0fb47914f164b8b023f3786ae812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(061e0fb47914f164b8b023f3786ae812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd531f9100726e6cd34fed8c7880e41cf') in 0.008705 seconds
+  Import took 0.010507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.653059 seconds.
+  path: Assets/Animations/Soldier/Running.anim
+  artifactKey: Guid(061e0fb47914f164b8b023f3786ae812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Running.anim using Guid(061e0fb47914f164b8b023f3786ae812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65147aaf296c824e70f54db06cae3b65') in 0.013577 seconds
+  Import took 0.015472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.616623 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(9b605a1ac6598de4085c9197cb6676db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(9b605a1ac6598de4085c9197cb6676db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3b47228d062433ef8ff1621dfd2ae6') in 0.006846 seconds
+  Import took 0.008669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.907850 seconds.
+  path: Assets/Animations/Soldier/Stand to Crouch.anim
+  artifactKey: Guid(9b605a1ac6598de4085c9197cb6676db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Stand to Crouch.anim using Guid(9b605a1ac6598de4085c9197cb6676db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2ec9c22f3e0335aceb2fa5452097b2') in 0.010444 seconds
+  Import took 0.012942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.455695 seconds.
+  path: Assets/Animations/Soldier/mixamo.com.anim
+  artifactKey: Guid(05a2d682ae6961049be6e9051f2d81f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/mixamo.com.anim using Guid(05a2d682ae6961049be6e9051f2d81f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c0a820d4895428345af77a8dfe4710') in 0.007553 seconds
+  Import took 0.009410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.222415 seconds.
+  path: Assets/Animations/Soldier/Walking.anim
+  artifactKey: Guid(05a2d682ae6961049be6e9051f2d81f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/Walking.anim using Guid(05a2d682ae6961049be6e9051f2d81f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55671a5e4c1d589e90adec8f33109c21') in 0.009150 seconds
+  Import took 0.011057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.870657 seconds.
+  path: Assets/Imports/elite/Breathing Idle.anim
+  artifactKey: Guid(ad76a40e65eb7974ba9a24277f18a011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/elite/Breathing Idle.anim using Guid(ad76a40e65eb7974ba9a24277f18a011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf19a89bf51f937c09e4611cb93352a') in 0.040633 seconds
+  Import took 0.042910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.310127 seconds.
+  path: Assets/Animations/Soldier/elite.controller
+  artifactKey: Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/elite.controller using Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '495beacf716e6c6aaba2ea35d480e22f') in 0.008396 seconds
+  Import took 0.010620 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000615 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1094 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.8 MB.
+System memory in use after: 72.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1603.
+Total: 1.920500 ms (FindLiveObjects: 0.291800 ms CreateObjectMapping: 0.068600 ms MarkObjects: 1.483400 ms  DeleteObjects: 0.075100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2184.710850 seconds.
+  path: Assets/Animations/Soldier/elite.controller
+  artifactKey: Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Soldier/elite.controller using Guid(fc788be806171e84fbb8e7365645a8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834821ea4a3e461ea3dc6ad91163075b') in 0.135056 seconds
+  Import took 0.138012 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
