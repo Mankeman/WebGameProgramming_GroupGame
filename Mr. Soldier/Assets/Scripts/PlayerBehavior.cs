@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    //Reference to the character controller, so that we can move.
+    //Reference to character components
     public CharacterController controller;
+    private Animator anim;
+    private bool isDead = false;
 
     //How fast are we going?
     public float speed = 12f;
@@ -25,8 +27,13 @@ public class PlayerBehavior : MonoBehaviour
     //Store our velocity from the up/down axis
     Vector3 velocity;
 
+    void Start()
+    {
+        //Grabbing the animator component from the player.
+        anim = GetComponent<Animator>();
+    }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Check if we're grounded.
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -56,6 +63,15 @@ public class PlayerBehavior : MonoBehaviour
         //Add the weight to our player
         controller.Move(velocity * Time.deltaTime);
 
-
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Debug.Log("Fire 1 pressed");
+        }
+        //Our animator is gonna use these variables.
+        anim.SetFloat("Speed", Mathf.Abs(x));
+        anim.SetBool("isSprinting", Input.GetKeyDown(KeyCode.LeftShift));
+        anim.SetBool("isCrouching", Input.GetKeyDown(KeyCode.LeftControl));
+        anim.SetBool("throwingGrenade", Input.GetButtonDown("Fire1"));
+        anim.SetBool("isDead", isDead);
     }
 }
