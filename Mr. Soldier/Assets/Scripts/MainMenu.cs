@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     {
         //Loads the next scene (The game level)
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //If you want to load a specific scene, you use it's name instead.
+        //If you want to load a specific scene, you use its name instead.
         //SceneManager.LoadScene("Level01");
     }
     public void CreditsScene()

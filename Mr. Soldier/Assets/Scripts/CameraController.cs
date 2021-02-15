@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour
 {
@@ -12,17 +13,23 @@ public class CameraController : MonoBehaviour
 
     //Move up and down.
     float xRotation = 0f;
+    public GameController control;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Lock cursor to the center of the screen.
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Confined;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //If you're in the pause menu or if the player is dead or if they're in some UI, don't do any of the code below.
+        if (PauseMenu.GameIsPaused || control.isDead || EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         //Reference to the mouse motions.
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
@@ -34,7 +41,5 @@ public class CameraController : MonoBehaviour
 
         //Rotate the body of the player side to side.
         playerBody.Rotate(Vector3.up * mouseX);
-        
-
     }
 }

@@ -1,31 +1,82 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier/Packages/manifest.json
+    m_FilePath: D:/Unity/Projects/WebGameProgramming_GroupGame/Mr.Soldier/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637477976884840727
-    m_Hash: 215445755
+      ticks: 637488490426693061
+    m_Hash: 1115937615
   m_LockFileStatus:
-    m_FilePath: D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier/Packages/packages-lock.json
+    m_FilePath: D:/Unity/Projects/WebGameProgramming_GroupGame/Mr.Soldier/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637477977018379043
-    m_Hash: 2739831012
+      ticks: 637489447273510373
+    m_Hash: 3038359861
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.unity.2d.sprite@1.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 2
+      resolvedPath: D:\Unity\2020.2.2f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.2d.sprite
+      assetPath: Packages/com.unity.2d.sprite
+      name: com.unity.2d.sprite
+      displayName: 2D Sprite
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: Use Unity Sprite Editor Window to create and edit Sprite asset
+        properties like pivot, borders and Physics shape
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        compatible:
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - sprite
+      - sprite editor window
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
     - packageId: com.unity.collab-proxy@1.3.9
       testable: 0
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr. Soldier\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr.Soldier\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -120,7 +171,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr. Soldier\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr.Soldier\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -158,6 +209,7 @@ m_PackageAssets:
         - 3.0.1
         - 3.0.2
         - 3.0.3
+        - 3.0.4
         compatible:
         - 1.0.2
         - 1.0.6
@@ -180,13 +232,14 @@ m_PackageAssets:
         - 3.0.1
         - 3.0.2
         - 3.0.3
+        - 3.0.4
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.1
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.20
+        version: 1.1.22
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -214,12 +267,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.5
+    - packageId: com.unity.ide.visualstudio@2.0.7
       testable: 0
       isDirectDependency: 1
-      version: 2.0.5
+      version: 2.0.7
       source: 1
-      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr. Soldier\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
+      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr.Soldier\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -247,6 +300,7 @@ m_PackageAssets:
         - 2.0.2
         - 2.0.3
         - 2.0.5
+        - 2.0.7
         compatible:
         - 1.0.2
         - 1.0.3
@@ -259,9 +313,20 @@ m_PackageAssets:
         - 2.0.2
         - 2.0.3
         - 2.0.5
-        verified: 2.0.5
-      dependencies: []
-      resolvedDependencies: []
+        - 2.0.7
+        verified: 2.0.7
+      dependencies:
+      - name: com.unity.test-framework
+        version: 1.1.9
+      resolvedDependencies:
+      - name: com.unity.test-framework
+        version: 1.1.22
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       keywords: []
       registry:
         id: main
@@ -275,20 +340,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637400980850000000
+      datePublishedTicks: 637486638490000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 83ca94e82bb6da515dc57e0d860b6b2224f56991
+        revision: dec282022c7a95fada560c36f53da9dd155a142c
         path: 
     - packageId: com.unity.ide.vscode@1.2.3
       testable: 0
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr. Soldier\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr.Soldier\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -352,12 +417,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
         path: 
-    - packageId: com.unity.test-framework@1.1.20
+    - packageId: com.unity.test-framework@1.1.22
       testable: 0
       isDirectDependency: 1
-      version: 1.1.20
+      version: 1.1.22
       source: 1
-      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr. Soldier\Library\PackageCache\com.unity.test-framework@1.1.20
+      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr.Soldier\Library\PackageCache\com.unity.test-framework@1.1.22
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -432,20 +497,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637429759710000000
+      datePublishedTicks: 637469345300000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
-        revision: f04391d9987f4a534f886a9638b011d53e5871d8
+        revision: 56c667cbc326a1cbab8dfd7ebc693a1121d0abe1
         path: 
-    - packageId: com.unity.textmeshpro@3.0.1
+    - packageId: com.unity.textmeshpro@3.0.3
       testable: 0
       isDirectDependency: 1
-      version: 3.0.1
+      version: 3.0.3
       source: 1
-      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr. Soldier\Library\PackageCache\com.unity.textmeshpro@3.0.1
+      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr.Soldier\Library\PackageCache\com.unity.textmeshpro@3.0.3
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -579,20 +644,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637314376320000000
+      datePublishedTicks: 637394911680000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
-        revision: 1604b62e543216408311bcd1355a7a9ca1e65765
+        revision: 648406226df6c4f28a0f64eaab42ddc3db70c475
         path: 
-    - packageId: com.unity.timeline@1.4.5
+    - packageId: com.unity.timeline@1.4.6
       testable: 0
       isDirectDependency: 1
-      version: 1.4.5
+      version: 1.4.6
       source: 1
-      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr. Soldier\Library\PackageCache\com.unity.timeline@1.4.5
+      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr.Soldier\Library\PackageCache\com.unity.timeline@1.4.6
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -750,13 +815,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637418317950000000
+      datePublishedTicks: 637463150940000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-        revision: dcd1bee062422cccd8f2d402f1a7877d07fa48f0
+        revision: 2fe55e5d14362cc4fdcc886f56dbfe518298e4a5
         path: 
     - packageId: com.unity.ugui@1.0.0
       testable: 0
@@ -2568,7 +2633,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr. Soldier\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: D:\Unity\Projects\WebGameProgramming_GroupGame\Mr.Soldier\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -2588,12 +2653,14 @@ m_PackageAssets:
         - 0.1.6-preview
         - 0.1.9-preview
         - 1.0.0
+        - 1.0.5
         - 1.0.6
         compatible:
         - 0.1.5-preview
         - 0.1.6-preview
         - 0.1.9-preview
         - 1.0.0
+        - 1.0.5
         - 1.0.6
         verified: 1.0.6
       dependencies: []
@@ -2614,7 +2681,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637429759280000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -2624,5 +2691,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier/Packages
+m_ProjectPath: D:/Unity/Projects/WebGameProgramming_GroupGame/Mr.Soldier/Packages
 m_EditorVersion: 2020.2.2f1 (068178b99f32)
