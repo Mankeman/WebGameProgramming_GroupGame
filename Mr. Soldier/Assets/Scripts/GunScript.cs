@@ -22,8 +22,8 @@ public class GunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If game pause or if dead or if pointer is over UI, don't run code.
-        if (PauseMenu.GameIsPaused || control.isDead || EventSystem.current.IsPointerOverGameObject())
+        //If game pause or if dead or if pointer is over UI or if level complete, don't run code.
+        if (PauseMenu.GameIsPaused || control.isDead || EventSystem.current.IsPointerOverGameObject() || control.levelComplete)
         {
             return;
         }

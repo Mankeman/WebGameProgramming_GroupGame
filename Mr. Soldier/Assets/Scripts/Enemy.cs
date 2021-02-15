@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Enemy : MonoBehaviour
     public float health = 100f;
     //Reference to the game controller.
     public GameObject gameControl;
-    private GameObject gameControlObject;
+    public GameController control;
     //Reference to the nav mesh on the char.
     public NavMeshAgent navMeshAgent;
     //Who will he chase?
@@ -20,14 +21,16 @@ public class Enemy : MonoBehaviour
     {
         //Automatically grab the components in case i forget to set it.
         navMeshAgent = GetComponent<NavMeshAgent>();
-        gameControlObject = GameObject.FindGameObjectWithTag("GameController");
-        if(gameControl != null)
-        {
-            gameControl = gameControlObject;
-        }
+        control = gameControl.GetComponent<GameController>();
+        
     }
     private void Update()
     {
+        //If you're in the pause menu or if the player is dead or if they're in some UI or if level complete, don't do any of the code below.
+        if (PauseMenu.GameIsPaused || control.levelComplete || control.isDead || EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         //Refresh the location of the player in case he moves.
         navMeshAgent.SetDestination(player.position);
     }

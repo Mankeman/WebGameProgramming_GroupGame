@@ -28,10 +28,10 @@ public class InventoryUI : MonoBehaviour
             isInventory = !isInventory;
             inventoryUI.SetActive(!inventoryUI.activeSelf);
         }
-        //if you opened inventory, slow down time and make cursor visible, else, go back to the game.
+        //if you opened inventory, stop time and make cursor visible, else, go back to the game.
         if (isInventory)
         {
-            Time.timeScale = 0.1f;
+            Time.timeScale = 0.0f;
             Cursor.lockState = CursorLockMode.None;
         }
         else

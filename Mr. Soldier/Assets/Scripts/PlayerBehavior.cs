@@ -40,8 +40,8 @@ public class PlayerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if game paused, player dead or pointer is over a UI, don't run any code.
-        if (PauseMenu.GameIsPaused || control.isDead || EventSystem.current.IsPointerOverGameObject())
+        // if game paused, player dead, level won or pointer is over a UI, don't run any code.
+        if (PauseMenu.GameIsPaused || control.isDead || EventSystem.current.IsPointerOverGameObject() || control.levelComplete)
         {
             return;
         }

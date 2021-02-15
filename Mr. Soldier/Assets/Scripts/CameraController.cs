@@ -24,8 +24,8 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If you're in the pause menu or if the player is dead or if they're in some UI, don't do any of the code below.
-        if (PauseMenu.GameIsPaused || control.isDead || EventSystem.current.IsPointerOverGameObject())
+        //If you're in the pause menu or if the player is dead or if they're in some UI or if level complete, don't do any of the code below.
+        if (PauseMenu.GameIsPaused || control.levelComplete || control.isDead || EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }

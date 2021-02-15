@@ -10,7 +10,6 @@ public class ItemPickup : Interactable
 
         PickUp();
     }
-
     void PickUp()
     {
         //Pick up item and add to inventory.

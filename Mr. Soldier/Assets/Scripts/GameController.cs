@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour
     public int kills = 0;
     public int count = 5;
     public bool isDead = false;
+    public bool levelComplete = false;
 
     // Update is called once per frame
     void Update()
@@ -42,6 +43,7 @@ public class GameController : MonoBehaviour
     {
         //If you're dead, make the bool true, pause time, play music and show UI
         isDead = true;
+        Cursor.lockState = CursorLockMode.Confined;
         gameOverUI.SetActive(true);
         Time.timeScale = 0f;
         mainAudio.GetComponent<AudioSource>().Stop();
@@ -68,8 +70,10 @@ public class GameController : MonoBehaviour
         //If player beat the level, make it possible to restart the level and next level becomes active.
         MainAudio.GetComponent<AudioSource>().Stop();
         AudioWin.GetComponent<AudioSource>().Play();
-        gameWonUI.SetActive(true);
+        levelComplete = true;
         Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.Confined;
+        gameWonUI.SetActive(true);
         howMuchTime.text = $"It took you {currentTime.ToString("00:00.00")} to win. Can you do better?";
     }
 }

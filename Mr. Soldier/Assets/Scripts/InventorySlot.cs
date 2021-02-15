@@ -10,7 +10,13 @@ public class InventorySlot : MonoBehaviour
     //Since we only have health pack, we can do healAmount.
     public int healAmount = 20;
     Item item;
+    PlayerBehavior player;
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
+
+    }
     public void AddItem(Item newItem)
     {
         //To add item to inventory, set the sprite to the icon, make it able to be pressed and deleted.
@@ -37,7 +43,8 @@ public class InventorySlot : MonoBehaviour
         //Use the healing pack
         if(item != null)
         {
-            item.Heal(healAmount);
+            //Heal the player by a certain amount, then delete item.
+            item.Heal(healAmount, player);
             item.RemoveFromInventory();
         }
     }
