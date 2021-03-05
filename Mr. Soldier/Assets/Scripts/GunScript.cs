@@ -5,7 +5,8 @@ using UnityEngine.EventSystems;
 public class GunScript : MonoBehaviour
 {
     //Changeable variables in unity.
-    public float damage = 10f;
+    [Header("Gun Properties")]
+    public int damage = 20;
     public float range = 100f;
     public float impactForce = 30f;
     public float fireRate = 15f;
@@ -43,11 +44,11 @@ public class GunScript : MonoBehaviour
         //Bullet direction using Raycast
         RaycastHit hit;
         //if our Raycast touches something
-        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             //check if the target has an enemy script on them. if they do, damage them.
             Enemy target = hit.transform.GetComponent<Enemy>();
-            if(target != null)
+            if (target != null)
             {
                 target.TakeDamage(damage);
             }

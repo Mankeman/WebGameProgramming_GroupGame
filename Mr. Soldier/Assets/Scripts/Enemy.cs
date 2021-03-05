@@ -7,7 +7,8 @@ using UnityEngine.EventSystems;
 public class Enemy : MonoBehaviour
 {
     //What is their health?
-    public float health = 100f;
+    public int health = 100;
+    public HealthBar healthBar;
     //Reference to the game controller.
     public GameObject gameControl;
     public GameController control;
@@ -22,7 +23,8 @@ public class Enemy : MonoBehaviour
         //Automatically grab the components in case i forget to set it.
         navMeshAgent = GetComponent<NavMeshAgent>();
         control = gameControl.GetComponent<GameController>();
-        
+        player = GameObject.Find("Soldier").transform;
+        healthBar.SetHealth(health);
     }
     private void Update()
     {
@@ -34,18 +36,19 @@ public class Enemy : MonoBehaviour
         //Refresh the location of the player in case he moves.
         navMeshAgent.SetDestination(player.position);
     }
-    public void TakeDamage(float amount)
+    public void TakeDamage(int damage)
     {
-        health -= amount;
-        //if their health goes to 0 or below, kill them and add a +1 to the score.
-        if(health <= 0f)
+        health -= damage;
+        healthBar.SetHealth(health);
+        if (health < 0)
         {
             Die();
             gameControl.GetComponent<GameController>().AddScore(1);
         }
     }
-    void Die()
+    public void Die()
     {
+        //destroy the game object when they die
         Destroy(gameObject);
     }
     private void OnTriggerStay(Collider other)

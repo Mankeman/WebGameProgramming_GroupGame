@@ -5,23 +5,36 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    //Reference to the slider components.
-    public Slider slider;
+    private Slider healthBarSlider; 
     public Gradient gradient;
     public Image fill;
 
-    public void SetMaxHealth(int health)
+    [Header("Health Properties")]
+    [Range(0, 100)]
+    public int currentHealth = 100;
+    [Range(1, 100)]
+    public int maximumHealth = 100;
+    // Start is called before the first frame update
+    void Start()
     {
-        //Set the slider values to the player health.
-        slider.maxValue = health;
-        slider.value = health;
-        //Evaluate calculates the slider values from 0-1 and turns it into percentages.
-        fill.color = gradient.Evaluate(1f);
+        healthBarSlider = GetComponent<Slider>();
+        currentHealth = maximumHealth;
+    }
+    public void TakeDamage(int damage)
+    {
+        healthBarSlider.value -= damage;
+        currentHealth -= damage;
+        if (healthBarSlider.value <= 0)
+        {
+            GetComponent<Enemy>().Die();
+            healthBarSlider.value = 0;
+            currentHealth = 0;
+        }
     }
     public void SetHealth(int health)
     {
         //Sets the current health of the player to the slider.
-        slider.value = health;
-        fill.color = gradient.Evaluate(slider.normalizedValue);
+        healthBarSlider.value = health;
+        fill.color = gradient.Evaluate(healthBarSlider.normalizedValue);
     }
 }

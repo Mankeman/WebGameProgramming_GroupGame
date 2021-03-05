@@ -6,6 +6,7 @@ public class InventoryUI : MonoBehaviour
     public Transform itemsParent;
     public GameObject inventoryUI;
     public bool isInventory = false;
+    public GameController gameController;
 
     Inventory inventory;
 
@@ -13,6 +14,7 @@ public class InventoryUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
         inventory = Inventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
 

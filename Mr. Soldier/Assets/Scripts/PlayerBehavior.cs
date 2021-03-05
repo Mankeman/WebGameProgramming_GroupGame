@@ -35,7 +35,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         //Setting our health
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        healthBar.currentHealth = currentHealth;
     }
     // Update is called once per frame
     void Update()

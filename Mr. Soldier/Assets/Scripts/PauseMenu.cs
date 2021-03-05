@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
     //Checking if the game is paused.
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject inventoryUI;
+    public bool isInventory = false;
 
     public void Update()
     {
@@ -17,12 +19,13 @@ public class PauseMenu : MonoBehaviour
         {
             if (GameIsPaused)
             {
-                Time.timeScale = 1f;
+                Cursor.lockState = CursorLockMode.Locked;
                 Resume();
+
             }
             else
             {
-                Time.timeScale = 0f;
+                Cursor.lockState = CursorLockMode.None;
                 Pause();
             }
         }
