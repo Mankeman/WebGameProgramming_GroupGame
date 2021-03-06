@@ -63,12 +63,4 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Level01");
     }
-    public void Save()
-    {
-        //This is where i'll be putting the save game code
-    }
-    public void Load()
-    {
-        //This is where i'll be putting the load game code
-    }
 }

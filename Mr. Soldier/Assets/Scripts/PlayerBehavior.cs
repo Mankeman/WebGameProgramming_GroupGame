@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour
 {
@@ -94,5 +95,25 @@ public class PlayerBehavior : MonoBehaviour
     {
         //Check if we're grounded
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+    }
+    public void Save()
+    {
+        //This is where i'll be putting the save game code
+        SaveSystem.SavePlayer(this);
+    }
+    public void Load()
+    {
+        //This is where i'll be putting the load game code
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        SceneManager.LoadScene(data.level);
+        currentHealth = data.health;
+
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+
+        this.transform.position = position;
     }
 }
