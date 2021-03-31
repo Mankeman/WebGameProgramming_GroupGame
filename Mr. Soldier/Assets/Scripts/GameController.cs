@@ -17,12 +17,20 @@ public class GameController : MonoBehaviour
     public AudioSource MainAudio;
     public AudioSource AudioWin;
 
-    //Some floats and bools
+    [Header("Other Components")]
     public float currentTime = 0f;
     public int kills = 0;
     public int count = 5;
     public bool isDead = false;
     public bool levelComplete = false;
+    //public Pauseable pauseable;
+
+    [Header("Player")]
+    public PlayerBehavior player;
+    public CameraController playerCamera;
+
+    [Header("Scene Data")]
+    public SceneDataSO sceneData;
 
     // Update is called once per frame
     void Update()
@@ -43,7 +51,7 @@ public class GameController : MonoBehaviour
     {
         //If you're dead, make the bool true, pause time, play music and show UI
         isDead = true;
-        Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.lockState = CursorLockMode.Confined;
         gameOverUI.SetActive(true);
         Time.timeScale = 0f;
         mainAudio.GetComponent<AudioSource>().Stop();
@@ -72,8 +80,54 @@ public class GameController : MonoBehaviour
         AudioWin.GetComponent<AudioSource>().Play();
         levelComplete = true;
         Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.lockState = CursorLockMode.Confined;
         gameWonUI.SetActive(true);
         howMuchTime.text = $"It took you {currentTime.ToString("00:00.00")} to win. Can you do better?";
+    }
+    public void LoadButton()
+    {
+        LoadFromPlayerPrefs();
+
+        player.controller.enabled = false;
+        player.transform.position = sceneData.playerPosition;
+        player.transform.rotation = sceneData.playerRotation;
+        player.controller.enabled = true;
+
+        player.currentHealth = sceneData.playerHealth;
+        player.healthBar.SetHealth(sceneData.playerHealth);
+    }
+    public void SaveButton()
+    {
+        SaveToPlayerPrefs();
+
+        sceneData.playerPosition = player.transform.position;
+        sceneData.playerRotation = player.transform.rotation;
+        sceneData.playerHealth = player.currentHealth;
+    }
+    void SaveToPlayerPrefs()
+    {
+        PlayerPrefs.SetFloat("playerTransformX", sceneData.playerPosition.x);
+        PlayerPrefs.SetFloat("playerTransformY", sceneData.playerPosition.y);
+        PlayerPrefs.SetFloat("playerTransformZ", sceneData.playerPosition.z);
+
+        PlayerPrefs.SetFloat("playerRotationX", sceneData.playerRotation.x);
+        PlayerPrefs.SetFloat("playerRotationY", sceneData.playerRotation.y);
+        PlayerPrefs.SetFloat("playerRotationZ", sceneData.playerRotation.z);
+        PlayerPrefs.SetFloat("playerRotationW", sceneData.playerRotation.w);
+
+        PlayerPrefs.SetInt("playerHealth", sceneData.playerHealth);
+    }
+    void LoadFromPlayerPrefs()
+    {
+        sceneData.playerPosition.x = PlayerPrefs.GetFloat("playerTransformX");
+        sceneData.playerPosition.y = PlayerPrefs.GetFloat("playerTransformY");
+        sceneData.playerPosition.z = PlayerPrefs.GetFloat("playerTransformZ");
+
+        sceneData.playerRotation.x = PlayerPrefs.GetFloat("playerRotationX");
+        sceneData.playerRotation.y = PlayerPrefs.GetFloat("playerRotationY");
+        sceneData.playerRotation.z = PlayerPrefs.GetFloat("playerRotationZ");
+        sceneData.playerRotation.w = PlayerPrefs.GetFloat("playerRotationW");
+
+        sceneData.playerHealth = PlayerPrefs.GetInt("playerHealth");
     }
 }

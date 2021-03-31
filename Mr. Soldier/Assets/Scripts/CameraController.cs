@@ -5,34 +5,41 @@ using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour
 {
+    [Header("Mobile Controls")]
+    public Joystick joystick;
+    public float sensitivity;
+
+    [Header("Desktop Controls")]
     //Mouse sensitivity.
     public float mouseSensitivity = 100f;
 
+    [Header("Others")]
     //Reference to the player body to rotate it as we move the camera.
     public Transform playerBody;
 
     //Move up and down.
     float xRotation = 0f;
+
+    //Game Controller
     public GameController control;
 
     // Start is called before the first frame update
     void Start()
     {
         //Cursor.lockState = CursorLockMode.Confined;
+        control = FindObjectOfType<GameController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //If you're in the pause menu or if the player is dead or if they're in some UI or if level complete, don't do any of the code below.
-        if (PauseMenu.GameIsPaused || control.levelComplete || control.isDead || EventSystem.current.IsPointerOverGameObject())
-        {
-            return;
-        }
+        //Mobile Controls
+        float mouseX = joystick.Horizontal * sensitivity;
+        float mouseY = joystick.Vertical * sensitivity;
 
-        //Reference to the mouse motions.
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        //Reference to the mouse motions. (Desktop/WebGL)
+        //float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        //float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         //Rotate the camera up and down.
         xRotation -= mouseY;

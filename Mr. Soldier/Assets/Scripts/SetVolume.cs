@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 
 public class SetVolume : MonoBehaviour
 {
+    [Header("Components")]
     //Which volumes will we be touching?
     public AudioMixer musicMixer;
     public AudioMixer effectMixer;

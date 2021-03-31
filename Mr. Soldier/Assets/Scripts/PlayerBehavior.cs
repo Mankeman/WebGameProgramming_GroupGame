@@ -6,34 +6,41 @@ using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour
 {
+    [Header("Components")]
     //Reference to character components
     public CharacterController controller;
     public GameController control;
-    //How fast are we going?
-    public float speed = 12f;
-
-    //Gravity variable
-    public float gravity = -9.81f;
-
-    //Check if we're on the floor
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
-    private bool isGrounded;
-
-    //How to jump.
-    public float jumpHeight = 3f;
-
-    //Health System
     public HealthBar healthBar;
+    public Joystick joystick;
+    public LayerMask groundMask;
+    public Transform groundCheck;
+    public GameObject miniMap;
+
+    [Header("Mobile Controls")]
+    public float horizSen;
+    public float vertSen;
+
+    [Header("Stats")]
+    public float speed = 12f;
+    public float jumpHeight = 3f;
+    //Health System
     public int maxHealth = 150;
     public int currentHealth;
-
+    //Gravity variable
+    public float gravity = -9.81f;
     //Store our velocity from the up/down axis
     Vector3 velocity;
 
+    [Header("Ground")]
+    //Check if we're on the floor
+    public float groundDistance = 0.4f;
+    private bool isGrounded;
+    
+
     void Start()
     {
+        control = FindObjectOfType<GameController>();
+        controller = GetComponent<CharacterController>();
         //Setting our health
         currentHealth = maxHealth;
         healthBar.currentHealth = currentHealth;
@@ -41,24 +48,28 @@ public class PlayerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if game paused, player dead, level won or pointer is over a UI, don't run any code.
-        if (PauseMenu.GameIsPaused || control.isDead || EventSystem.current.IsPointerOverGameObject() || control.levelComplete)
-        {
-            return;
-        }
-        //Jump code
-        Jump();
-        //Checking if you're on the floor
-        OnTheFloor();
-        //Grab inputs.
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-
-        if(isGrounded && velocity.y < 0)
+        //Check if we're grounded
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        
+        if (isGrounded && velocity.y < 0)
         {
             //Reset our weight once we land on the ground
             velocity.y = -2f;
         }
+
+        //Jump code (WebGL/Desktop)
+        //if (Input.GetButtonDown("Jump") && isGrounded)
+        //{
+        //    Jump();
+        //}
+
+        //Grab inputs (WebGL/Desktop)
+        //float x = Input.GetAxis("Horizontal");
+        //float z = Input.GetAxis("Vertical");
+
+        //Mobile Controls
+        float x = joystick.Horizontal;
+        float z = joystick.Vertical;
 
         //Turn the inputs to a direction
         Vector3 move = transform.right * x + transform.forward * z;
@@ -71,6 +82,12 @@ public class PlayerBehavior : MonoBehaviour
 
         //Add the weight to our player
         controller.Move(velocity * Time.deltaTime);
+
+        //MiniMap (WebGL/Desktop)
+        //if (Input.GetKeyDown(KeyCode.M))
+        //{
+        //    MiniMap();
+        //}
     }
     public void TakeDamage(int damage)
     {
@@ -85,35 +102,18 @@ public class PlayerBehavior : MonoBehaviour
     }
     void Jump()
     {
-        //Jump code
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }
+        velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
     }
-    void OnTheFloor()
+    public void JumpButton()
     {
-        //Check if we're grounded
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        Jump();
     }
-    public void Save()
+    void MiniMap()
     {
-        //This is where i'll be putting the save game code
-        SaveSystem.SavePlayer(this);
+        miniMap.SetActive(!miniMap.activeInHierarchy);
     }
-    public void Load()
+    public void MiniMapButton()
     {
-        //This is where i'll be putting the load game code
-        PlayerData data = SaveSystem.LoadPlayer();
-
-        SceneManager.LoadScene(data.level);
-        currentHealth = data.health;
-
-        Vector3 position;
-        position.x = data.position[0];
-        position.y = data.position[1];
-        position.z = data.position[2];
-
-        this.transform.position = position;
+        MiniMap();
     }
 }

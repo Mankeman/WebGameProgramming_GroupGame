@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+    [Header("Components")]
     private Slider healthBarSlider; 
     public Gradient gradient;
     public Image fill;
@@ -12,8 +13,10 @@ public class HealthBar : MonoBehaviour
     [Header("Health Properties")]
     [Range(0, 100)]
     public int currentHealth = 100;
+
     [Range(1, 100)]
     public int maximumHealth = 100;
+
     // Start is called before the first frame update
     void Start()
     {

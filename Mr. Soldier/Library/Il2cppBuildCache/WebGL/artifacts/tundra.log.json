@@ -1,3 +1,0 @@
-{"msg":"init","dagFile":"artifacts\\tundra.dag","targets":[]}
-{"msg":"inputSignatureChanged","annotation":"Il2Cpp D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"changes":[{"key":"InputFileDigest","path":"D:\\Unity\\Projects\\WebGameProgramming_GroupGame\\Mr. Soldier\\Temp\\StagingArea\\Data\\Managed\\Assembly-CSharp.dll","dependency":"explicit"}]}
-{"msg":"noderesult","annotation":"Il2Cpp D:/Unity/Projects/WebGameProgramming_GroupGame/Mr. Soldier/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"exitcode":0}
