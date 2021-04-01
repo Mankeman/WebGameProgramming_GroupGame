@@ -29,16 +29,16 @@ public class InventoryUI : MonoBehaviour
         //}
 
         //if you opened inventory, stop time and make cursor visible, else, go back to the game.
-        if (isInventory)
-        {
-            Time.timeScale = 0.0f;
-            //Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-            Time.timeScale = 1.0f;
-            //Cursor.lockState = CursorLockMode.Locked;
-        }
+        //if (isInventory)
+        //{
+        //    Time.timeScale = 0.0f;
+        //    Cursor.lockState = CursorLockMode.None;
+        //}
+        //else
+        //{
+        //    Time.timeScale = 1.0f;
+        //    Cursor.lockState = CursorLockMode.Locked;
+        //}
     }
     void UpdateUI()
     {
