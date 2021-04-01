@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -87,22 +89,16 @@ public class GameController : MonoBehaviour
     public void LoadButton()
     {
         LoadFromPlayerPrefs();
-
-        player.controller.enabled = false;
-        player.transform.position = sceneData.playerPosition;
-        player.transform.rotation = sceneData.playerRotation;
-        player.controller.enabled = true;
-
-        player.currentHealth = sceneData.playerHealth;
-        player.healthBar.SetHealth(sceneData.playerHealth);
+        PlayerPrefs.SetInt("LoadingBool", 0);
+        SceneManager.LoadScene("Level01");
     }
     public void SaveButton()
     {
-        SaveToPlayerPrefs();
-
         sceneData.playerPosition = player.transform.position;
         sceneData.playerRotation = player.transform.rotation;
         sceneData.playerHealth = player.currentHealth;
+
+        SaveToPlayerPrefs();
     }
     void SaveToPlayerPrefs()
     {
@@ -119,6 +115,8 @@ public class GameController : MonoBehaviour
     }
     void LoadFromPlayerPrefs()
     {
+        PlayerPrefs.SetInt("LoadingBool", 0);
+        sceneData.LoadingBool = PlayerPrefs.GetInt("LoadingBool");
         sceneData.playerPosition.x = PlayerPrefs.GetFloat("playerTransformX");
         sceneData.playerPosition.y = PlayerPrefs.GetFloat("playerTransformY");
         sceneData.playerPosition.z = PlayerPrefs.GetFloat("playerTransformZ");

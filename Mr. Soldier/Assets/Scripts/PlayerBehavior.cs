@@ -15,6 +15,7 @@ public class PlayerBehavior : MonoBehaviour
     public LayerMask groundMask;
     public Transform groundCheck;
     public GameObject miniMap;
+    public SceneDataSO sceneData;
 
     [Header("Mobile Controls")]
     public float horizSen;
@@ -35,8 +36,25 @@ public class PlayerBehavior : MonoBehaviour
     //Check if we're on the floor
     public float groundDistance = 0.4f;
     private bool isGrounded;
-    
 
+    void Awake()
+    {
+        if(PlayerPrefs.GetInt("LoadingBool") == 0)
+        {
+            this.controller.enabled = false;
+            this.transform.position = sceneData.playerPosition;
+            this.transform.position = sceneData.playerPosition;
+            this.transform.position = sceneData.playerPosition;
+            this.transform.rotation = sceneData.playerRotation;
+            this.transform.rotation = sceneData.playerRotation;
+            this.transform.rotation = sceneData.playerRotation;
+            this.transform.rotation = sceneData.playerRotation;
+            this.controller.enabled = true;
+
+            this.currentHealth = sceneData.playerHealth;
+            this.healthBar.SetHealth(sceneData.playerHealth);
+        }
+    }
     void Start()
     {
         control = FindObjectOfType<GameController>();

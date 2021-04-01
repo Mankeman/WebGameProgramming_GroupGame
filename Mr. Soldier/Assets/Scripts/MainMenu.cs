@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     public GameObject MainMenuUI;
     public void PlayGame()
     {
+        PlayerPrefs.SetInt("LoadingBool", 1);
         //Loads the next scene (The game level)
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //If you want to load a specific scene, you use its name instead.

@@ -62,6 +62,7 @@ public class PauseMenu : MonoBehaviour
     {
         //Restart the game.
         Time.timeScale = 1f;
+        PlayerPrefs.SetInt("LoadingBool", 1);
         SceneManager.LoadScene("Level01");
     }
 }

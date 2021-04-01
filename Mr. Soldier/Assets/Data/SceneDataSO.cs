@@ -11,4 +11,5 @@ public class SceneDataSO : ScriptableObject
     public Vector3 playerPosition;
     public Quaternion playerRotation;
     public int playerHealth;
+    public int LoadingBool;
 }
