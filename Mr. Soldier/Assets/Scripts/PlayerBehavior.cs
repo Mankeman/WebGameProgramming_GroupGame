@@ -43,11 +43,6 @@ public class PlayerBehavior : MonoBehaviour
         {
             this.controller.enabled = false;
             this.transform.position = sceneData.playerPosition;
-            this.transform.position = sceneData.playerPosition;
-            this.transform.position = sceneData.playerPosition;
-            this.transform.rotation = sceneData.playerRotation;
-            this.transform.rotation = sceneData.playerRotation;
-            this.transform.rotation = sceneData.playerRotation;
             this.transform.rotation = sceneData.playerRotation;
             this.controller.enabled = true;
 
@@ -118,9 +113,18 @@ public class PlayerBehavior : MonoBehaviour
             control.EndGame();
         }
     }
+    public void HealDamage(int heal)
+    {
+        //Heal whatever amount the first aid gives.
+        currentHealth += heal;
+        healthBar.SetHealth(currentHealth);
+    }
     void Jump()
     {
-        velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        if (isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
     }
     public void JumpButton()
     {

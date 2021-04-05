@@ -7,12 +7,16 @@ public class Item : ScriptableObject
     public PlayerBehavior currentPlayer;
     new public string name = "New Item";
     public Sprite icon = null;
+    void Start()
+    {
+        currentPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
+    }
 
     public virtual void Heal(int amount, PlayerBehavior currentPlayer)
     {
         //increase the player health by the amount the pack gives.
-        currentPlayer.currentHealth += amount;
-}
+        currentPlayer.HealDamage(amount);
+    }
     public void RemoveFromInventory()
     {
         //remove the item from the inventory.
