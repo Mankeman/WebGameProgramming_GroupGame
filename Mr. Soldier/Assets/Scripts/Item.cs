@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item")]
@@ -9,11 +10,12 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     void Start()
     {
-        currentPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
+        currentPlayer = GameObject.FindGameObjectWithTag("Soldier").GetComponent<PlayerBehavior>();
     }
 
     public virtual void Heal(int amount, PlayerBehavior currentPlayer)
     {
+        currentPlayer = GameObject.FindGameObjectWithTag("Soldier").GetComponent<PlayerBehavior>();
         //increase the player health by the amount the pack gives.
         currentPlayer.HealDamage(amount);
     }

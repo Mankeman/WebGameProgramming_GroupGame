@@ -4736,6 +4736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soldier
       objectReference: {fileID: 0}
+    - target: {fileID: 843682278597787902, guid: 8c67bdf55f4da8c42b5e0bacfbb4cf9e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 870040852873867930, guid: 8c67bdf55f4da8c42b5e0bacfbb4cf9e, type: 3}
       propertyPath: control
       value: 
