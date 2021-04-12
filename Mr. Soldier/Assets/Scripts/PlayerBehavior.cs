@@ -16,6 +16,7 @@ public class PlayerBehavior : MonoBehaviour
     public Transform groundCheck;
     public GameObject miniMap;
     public SceneDataSO sceneData;
+    public Quest quest;
 
     [Header("Mobile Controls")]
     public float horizSen;
@@ -63,7 +64,18 @@ public class PlayerBehavior : MonoBehaviour
     {
         //Check if we're grounded
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        
+
+        Movement();
+
+        //MiniMap (WebGL/Desktop)
+        //if (Input.GetKeyDown(KeyCode.M))
+        //{
+        //    MiniMap();
+        //}
+
+    }
+    public void Movement()
+    {
         if (isGrounded && velocity.y < 0)
         {
             //Reset our weight once we land on the ground
@@ -89,18 +101,21 @@ public class PlayerBehavior : MonoBehaviour
 
         //Code to move
         controller.Move(move * speed * Time.deltaTime);
-        
+
         //How to weigh us down
         velocity.y += gravity * Time.deltaTime;
 
         //Add the weight to our player
         controller.Move(velocity * Time.deltaTime);
 
-        //MiniMap (WebGL/Desktop)
-        //if (Input.GetKeyDown(KeyCode.M))
-        //{
-        //    MiniMap();
-        //}
+        if (quest.isActive)
+        {
+            if(this.transform.position.x != -4.2f)
+            {
+                quest.goal.leftJoystickMoved = true;
+                quest.goal.MovementDone();
+            }
+        }
     }
     public void TakeDamage(int damage)
     {
@@ -118,12 +133,22 @@ public class PlayerBehavior : MonoBehaviour
         //Heal whatever amount the first aid gives.
         currentHealth += heal;
         healthBar.SetHealth(currentHealth);
+        if (quest.isActive)
+        {
+            quest.goal.HealingDone();
+        }
     }
     void Jump()
     {
         if (isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            //Used for Quest
+            if (quest.isActive)
+            {
+                quest.goal.jumpButtonPressed = true;
+                quest.goal.JumpDone();
+            }
         }
     }
     public void JumpButton()
@@ -133,6 +158,11 @@ public class PlayerBehavior : MonoBehaviour
     void MiniMap()
     {
         miniMap.SetActive(!miniMap.activeInHierarchy);
+        if (quest.isActive)
+        {
+            quest.goal.miniMapButtonPressed = true;
+            quest.goal.MiniMapDone();
+        }
     }
     public void MiniMapButton()
     {

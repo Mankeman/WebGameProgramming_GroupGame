@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -22,12 +23,14 @@ public class CameraController : MonoBehaviour
 
     //Game Controller
     public GameController control;
+    public Quest quest;
 
     // Start is called before the first frame update
     void Start()
     {
         //Cursor.lockState = CursorLockMode.Confined;
         control = FindObjectOfType<GameController>();
+        quest = playerBody.GetComponent<PlayerBehavior>().quest;
     }
 
     // Update is called once per frame
@@ -48,5 +51,14 @@ public class CameraController : MonoBehaviour
 
         //Rotate the body of the player side to side.
         playerBody.Rotate(Vector3.up * mouseX);
+
+        if (quest.isActive)
+        {
+            if (playerBody.rotation.y != 0)
+            {
+                quest.goal.rightJoystickMoved = true;
+                quest.goal.MovementDone();
+            }
+        }
     }
 }

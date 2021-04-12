@@ -10,12 +10,14 @@ public class InventoryUI : MonoBehaviour
     public bool isInventory = false;
     Inventory inventory;
     InventorySlot[] slots;
+    public PlayerBehavior player;
     // Start is called before the first frame update
     void Start()
     {
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
         inventory = Inventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
+        player = FindObjectOfType<PlayerBehavior>();
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
     }
 
@@ -59,6 +61,11 @@ public class InventoryUI : MonoBehaviour
     {
         isInventory = !isInventory;
         inventoryUI.SetActive(!inventoryUI.activeSelf);
+        if (player.quest.isActive)
+        {
+            player.quest.goal.inventoryButtonPressed = true;
+            player.quest.goal.InventoryDone();
+        }
     }
     public void InventoryButton()
     {

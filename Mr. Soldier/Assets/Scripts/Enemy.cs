@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
 
     //Who will he chase?
     public Transform player;
+    public PlayerBehavior playBehav;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class Enemy : MonoBehaviour
         control = FindObjectOfType<GameController>();
         player = GameObject.Find("Soldier").transform;
         healthBar.SetHealth(health);
+        playBehav = FindObjectOfType<PlayerBehavior>();
     }
     private void Update()
     {
@@ -46,6 +48,10 @@ public class Enemy : MonoBehaviour
         {
             control.AddScore(1);
             Die();
+            if (playBehav.quest.isActive)
+            {
+                playBehav.quest.goal.KillingDone();
+            }
         }
     }
     public void Die()
